@@ -26,39 +26,46 @@ directory is a group and each file is an item. A special fill namesd
 import os
 
 def parseall(path, level=1):
+    '''Parse a directory and output his content'''
     out = ''
     indent = '  '
     for num in xrange(level):
         indent += '  '
     for obj in os.listdir(path):
-        if os.path.isdir(os.path.join(path,obj)):
-            out += indent + '<group name="'+obj+'">' + "\n"
-            out += parseall( os.path.join(path,obj), level + 1)
+        if os.path.isdir(os.path.join(path, obj)):
+            out += indent + '<group name="' + obj + '">' + "\n"
+            out += parseall( os.path.join(path, obj), level + 1)
             out += indent + "</group>\n"
         else:
             if not obj.endswith('~'):
-                out += "\n%s<!-- begin : %s -->\n" % (indent, os.path.join(path,obj))
+                out += "\n%s<!-- begin : %s -->\n" % (indent, 
+                                                      os.path.join(path, obj)
+                                                      )
                 if obj == 'all':
-                    out += open(os.path.join(path,obj),'r').read()
+                    out += open(os.path.join(path, obj),'r').read()
                 else:
                     out += '<item name="'+obj+'">' + "\n"
-                    out += open(os.path.join(path,obj),'r').read()
+                    out += open(os.path.join(path, obj),'r').read()
                     out += "</item>\n"
-                out += "\n%s<!-- end : %s -->\n" % (indent, os.path.join(path,obj))
+                out += "\n%s<!-- end : %s -->\n" % (indent, 
+                                                    os.path.join(path, obj)
+                                                    )
     return out
 
 
 def header():
+    '''Return the header section'''
     out = '<?xml version="1.0"?>'
     out += "\n<presets>\n"
     return out
 
 def footer():
+    '''Return the footer section'''
     out = "</presets>"
     return out
 
-
 def main(path):
+    '''Main function'''
     out = header()
     out += parseall(path)
     out += footer()
