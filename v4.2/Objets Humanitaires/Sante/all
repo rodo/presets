@@ -1,0 +1,157 @@
+		<item name="Structure de sante">
+			<label text="ID" />
+			<text key="id:uuid" text="UUID"/>
+			<text key="id:uid" text="UID"/>
+			<text key="id:ssid" text="SSID"/>
+			<text key="id:db_ctc" text="** ID Base CTC"/>
+			<label text="Signature spatiale" />
+			<text key="name" text="** Nom"/>
+			<text key="name:en" text="Name:En"/>
+			<text key="name:fr" text="Name:Fr"/>
+			<text key="name:kr" text="Name:Kr"/>
+			<text key="registry_name" text="** Registry Name"/>
+			<text key="addr:country_national_code" text="Code de pays à deux lettres ISO 3166-1 alpha-2"/>
+			<text key="addr:country" text="Nom du pay"/>
+			<text key="addr:city" text="* Nom de la ville"/>
+			<text key="addr:ward" text="Ward"/>
+			<text key="addr:postal_code" text="Code postal (batiment, zone ou quarrtier)"/>
+			<text key="addr:street" text="* Nom de la rue"/>
+			<text key="addr:housenumber" text="* Numero du batiment "/>
+			<text key="pcode" text="* PCODE"/>
+			<text key="boundary_admin_level1_name" text="Nom de l'entite administrative de rang1"/>
+			<text key="boundary_admin_level2_name" text="Nom de l'entite administrative de rang2"/>
+			<text key="boundary_admin_level3_name" text="* Nom de l'entite administrative de rang3"/>
+			<text key="boundary_admin_level4_name" text="Nom de l'entite administrative de rang4"/>
+			<text key="place:area" text="* Place"/>
+			<text key="place:area_alternate" text="Place - Autre nom"/>
+			<text key="description" text="Place - Description"/>
+			<text key="place:nearestlandmark" text="Place - Point de Repere"/>
+			<text key="block" text="block"/>			
+			<label text="Information - structure de sante" />
+			<combo key="amenity" text="* Equipement" values="hospital" display_values="Hospital"/>
+			<combo key="hfac_type" text="* Type de structure de sante" values="specialized_hopital,hospital,field_hospital,clinic,cs_health_center,cal_health_center_with_beds,csl_health_center_without_beds,dispensary,other_type_of_health_facility,unspecified" display_values="Hopital specialise,Hopital,Hopital de terrain,Clinique,CS-Health_center,CAL-Health_center_with_beds,CSL-Health_center_without_beds,Dispensaire,Autre type d'installation de sante (preciser en note),Non precise"/>
+			<combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
+			<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+      			<combo key="security" text="Securite" values="normal,high,restricted,confined,quarantined,closed,unspecified" diplay_values="Normale,Haute,Acces restreint,Confiné,Quarantaine,Fermé,Non precise"/>
+			<text key="hfac_medical_service_description" text="Description des services medicaux"/>
+      			<text key="hfac_capacity_description" text="Description de la capacite"/>
+			<text key="hfac_beds" text="* Nombre de lits"/>
+			<label text="Operateur" />
+			<text key="operator_id" text="Operator ID"/>
+			<text key="operator" text="* Operateur"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+			<text key="contact_person" text="Personne contact"/>
+			<text key="phone" text="* Telephone"/>
+			<text key="phone_emergency" text="Telephone - Urgence"/>
+			<text key="email" text="Email"/>
+			<text key="fax:" text="Fax"/>
+			<label text="Batiment" />
+      			<combo key="building" text="* Batiment" values="yes,building_concrete,building_sheet_metal,building_wood,shelter,waterproof_shelter,non_waterproof_shelter,tent,no" display_values="batiment,batiment en dur,batiment en tole,batiment en bois,abri,abri etanche,abri non etanche,tente,non precise"/>
+      			<combo key="damage_status" text="Dommages" values="destroyed,damaged,intact,unspecified"/>
+      			<text key="damage_assessment_date" text="Date evaluation des dommages"/>
+      			<text key="operator_damage" text="Organisation responsable de l'evaluation des dommages"/>
+      			<text key="building_use" text="Utilisation du batiment"/>
+			<label text="Cholera" />
+			<combo key="hcare_ors" text="* Centre de rehydratation orale" values="yes"/> 
+			<combo key="hcare_ctu" text="* Unite de traitement du cholera" values="yes"/>
+			<combo key="hcare_ctc" text="* Centre de traitement du cholera" values="yes"/>
+			<text key="hfac_current_bed_use" text="* Nombre de lits utilises"/>
+			<text key="hfac_current_floor_space_use" text="* Surface au sol utilisee dans l'enceinte de la structure"/>
+			<text key="hfac_max_floor_space_use" text="* Surface au sol maximale utilisable dans l'enceinte de la structure"/>
+			<label text="Operateur eau et assainissement" />
+			<text key="operator_wash_id" text="ID Operator eau et assainissement"/>
+			<text key="operator_wash" text="* Operateur eau et assainissement"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+      			<text key="contact_person_wash" text="* Point focal eau et assainissement"/>
+      			<text key="phone_wash" text="* Telephone"/>
+			<text key="email_wash" text="Email"/>
+			<text key="fax_wash:" text="Fax"/>
+			<label text="Source" />
+      			<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+      			<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+      			<text key="geometry_source_date" text="* Date de la source geometrique"/>
+      			<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+      			<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+     			<text key="attribute_source_date" text="* Date de la source attributaire"/>
+			<label text="Note" />
+      			<text key="note" text="Note"/>
+			<label text="Photo"/>
+      			<text key="photo_num" text="Numero de la photo"/>
+      			<text key="photo_name" text="Nom de fichier de la photo"/>
+      			<text key="photo_url" text="URL de la photo uploadee sur FLICKR"/>
+           	</item>
+      		<item name="Centre de traitement du cholera temporaire">
+			<label text="Uniquement pour centre de rehydratation orale, unites et centre de traitement du cholera installes hors des structures de soin"/>
+			<label text="ID" />
+			<text key="id:uuid" text="UUID"/>
+			<text key="id:uid" text="UID"/>
+			<text key="id:ssid" text="SSID"/>
+			<text key="id:db_ctc" text="** ID Base CTC"/>
+			<label text="Signature Spatiale" />
+			<text key="name" text="** Nom"/>
+			<text key="name:en" text="Nom:En"/>
+			<text key="name:fr" text="Nom:Fr"/>
+			<text key="name:kr" text="Nom:Kr"/>
+			<text key="registry_name" text="** NomRegistry Name"/>
+			<text key="addr:country_national_code" text="Code de pays à deux lettres ISO 3166-1 alpha-2"/>
+			<text key="addr:country" text="Nom du pay"/>
+			<text key="addr:city" text="* Nom de la ville"/>
+			<text key="addr:ward" text="Ward"/>
+			<text key="addr:postal_code" text="Code postal (batiment, zone ou quarrtier)"/>
+			<text key="addr:street" text="* Nom de la rue"/>
+			<text key="addr:housenumber" text="* Numero du batiment "/>
+			<text key="pcode" text="* PCODE"/>
+			<text key="boundary_admin_level1_name" text="Nom de l'entite administrative de rang1"/>
+			<text key="boundary_admin_level2_name" text="Nom de l'entite administrative de rang2"/>
+			<text key="boundary_admin_level3_name" text="* Nom de l'entite administrative de rang3"/>
+			<text key="boundary_admin_level4_name" text="Nom de l'entite administrative de rang4"/>
+			<text key="addr:full" text="* Adresse complete "/>
+			<text key="place:area" text="* Place"/>
+			<text key="place:area_alternate" text="Place - Autre nom"/>
+			<text key="description" text="Place - Description"/>
+			<text key="place:nearestlandmark" text="Place - Point de Repere"/>
+			<text key="block" text="block"/>			
+			<label text="Information centre traitement du cholera temporaire" />
+     			<combo key="humanitarian_use" text="* Usage humanitaire" values="oral_rehydratation_centre,cholera_treatment_unit,cholera_treatment_centre" display_values="Cendre de rehydratation orale,Unite de traitement du cholera,Centre de traitement du cholera"/>
+			<combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
+			<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+			<text key="capacity" text="* Capacite"/>
+			<text key="hfac_current_bed_use" text="* Nombre de lits utilises"/>
+			<text key="hfac_current_floor_space_use" text="* Surface au sol utilisee dans l'enceinte de la structure"/>
+			<text key="hfac_max_floor_space_use" text="* Surface au sol maximale utilisable dans l'enceinte de la structure"/>
+			<label text="Information operateur" />
+			<text key="operator_id" text="Operator ID"/>
+			<text key="operator" text="* Operateur"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+			<text key="contact_person" text="Personne contact"/>
+			<text key="phone" text="* Telephone"/>
+			<text key="email" text="Email"/>
+			<text key="fax:" text="Fax"/>
+			<label text="Information Operateur eau et assainissement" />
+			<text key="operator_wash_id" text="ID Operator eau et assainissement"/>
+			<text key="operator_wash" text="* Operateur eau et assainissement"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+      			<text key="contact_person_wash" text="* Point focal eau et assainissement"/>
+      			<text key="phone_wash" text="* Telephone"/>
+			<text key="email_wash" text="Email"/>
+			<text key="fax_wash:" text="Fax"/>
+			<label text="Information batiment" />
+      			<combo key="building" text="* Batiment" values="yes,building_concrete,building_sheet_metal,building_wood,shelter,waterproof_shelter,non_waterproof_shelter,tent,no" display_values="batiment,batiment en dur,batiment en tole,batiment en bois,abri,abri etanche,abri non etanche,tente,non precise"/>
+      			<combo key="damage_status" text="Dommages" values="destroyed,damaged,intact,unspecified"/>
+      			<text key="damage_assessment_date" text="Date evaluation des dommages"/>
+      			<text key="operator_damage" text="Organisation responsable de l'evaluation des dommages"/>
+      			<text key="building_use" text="Utilisation du batiment"/>
+			<label text="Source"/>
+      			<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+      			<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+      			<text key="geometry_source_date" text="* Date de la source geometrique"/>
+      			<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+      			<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+     			<text key="attribute_source_date" text="* Date de la source attributaire"/>
+			<label text="Note"/>
+      			<text key="note" text="note"/>
+			<label text="Photo"/>
+      			<text key="photo_num" text="Numero de la photo"/>
+      			<text key="photo_name" text="Nom de fichier de la photo"/>
+      			<text key="photo_url" text="URL de la photo uploadee sur FLICKR"/>
+		</item>

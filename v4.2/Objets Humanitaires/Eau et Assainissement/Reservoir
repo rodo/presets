@@ -1,0 +1,25 @@
+<label text="Ajout d'un reservoir" />
+<key key="man_made" value="tank" />
+<key key="amenity" value="drinking_water" />
+<combo key="water_type" text="* Type d'eau" values="grey_water,drinking_water,industrial_water,unspecified" display_values="eau brute,eau potable,eau industrielle,non precise" readonly="true"/>
+<combo key="water_quality_issue" text="* probleme de qualite de l'eau" values="yes,no,unspecifed"  display_values="oui,non,non precise"/>
+<text key="capacity" text="Capacite"/>
+<combo key="pump_type" text="Type de pompe" values="manual,powered_network,powered_solar,powered_wind,powered_fuel,powered_hydraulic,unspecified" display_values="manuelle,energie reseau,energie solaire,energie eolienne,energie fuel,energie hydraulique,non precise"/>
+<text key="average_waiting_time" text="temps d'attente moyen"/>
+<text key="fee" text="Prix"/>
+<combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
+<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+<text key="operator" text="* Operateur"/>
+<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+<text key="operator id" text="Identifiant d'operateur"/>
+<text key="contact_person" text="Personne contact"/>
+<text key="phone" text="* Telephone"/>
+<text key="email" text="Email"/>
+<combo key="program_aquatab" text="* Integre au programme Aquatab : approvisionne en tablettes de purification d'eau" values="yes"/>
+<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+<text key="geometry_source_date" text="* Date de la source geometrique"/>
+<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+<text key="attribute_source_date" text="* Date de la source attributaire"/>
+<text key="note" text="Note"/>

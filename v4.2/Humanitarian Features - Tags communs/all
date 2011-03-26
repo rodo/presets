@@ -1,0 +1,93 @@
+		<item name="ID">
+			<text key="id:uuid" text="ID:UUID"/>
+			<text key="id:uid" text="id:uid"/>
+			<text key="id:ssid" text="id:ssid"/>
+		</item>
+		<item name="Nom">
+			<text key="name" text="Nom"/>
+			<text key="name:en" text="Nom en anglais"/>
+			<text key="name:fr" text="* Nom en francais"/>
+			<text key="name:kr" text="* Nom en creole"/>
+			<text key="registry_name" text="* Nom officiel"/>
+		</item>
+		<item name="Adresse">
+			<text key="addr:country_national_code" text="Code de pays à deux lettres ISO 3166-1 alpha-2"/>
+			<text key="addr:country" text="Nom du pay"/>
+			<text key="addr:city" text="* Nom de la ville"/>
+			<text key="addr:ward" text="Ward"/>
+			<text key="addr:postal_code" text="Code postal (batiment, zone ou quarrtier)"/>
+			<text key="addr:street" text="* Nom de la rue"/>
+			<text key="addr:housenumber" text="* Numero du batiment "/>
+		</item>
+		<item name="Signature spatiale">
+			<text key="pcode" text="* PCODE"/>
+			<text key="boundary_admin_level1_name" text="Nom de l'entite administrative de rang1"/>
+			<text key="boundary_admin_level2_name" text="Nom de l'entite administrative de rang2"/>
+			<text key="boundary_admin_level3_name" text="* Nom de l'entite administrative de rang3"/>
+			<text key="boundary_admin_level4_name" text="Nom de l'entite administrative de rang4"/>
+			<text key="place:area" text="* Place"/>
+			<text key="place:area_alternate" text="Place - Autre nom"/>
+			<text key="description" text="Place - Description"/>
+			<text key="place:nearestlandmark" text="Place - Point de Repere"/>
+			<text key="block" text="block"/>			
+		</item>
+		<item name="Operateur">
+			<text key="operator" text="* Operateur"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+			<text key="operator_id" text="ID de l'operateur"/>
+		</item>
+		<item name="Capacity">
+			<text key="Capacity" text="* Capacite"/>
+		</item>
+		<item name="Contact Information">
+			<text key="contact_person" text="Personne contact"/>
+			<text key="phone" text="* Telephone"/>
+			<text key="phone_emergency" text="Telephone - Urgence"/>
+			<text key="email" text="Email"/>
+			<text key="fax" text="Fax"/>
+		</item>
+		<item name="Usage Humanitaire">
+			<combo key="humanitarian_use" text="* Usage Humanitaire" values="primary_hub,secondary_hub,final_delivery_point,oral_rehydratation_centre,cholera_treatment_unit,cholera_treatment_centre,disaster_shelter,operationally_significant_location,unspecified" display_values="hub principal,hub secondaire,point de distribution final,centre de traitement du cholera,unite de traitement du cholera,centre de rehydratation orale,abri,localite operationnellement importante,non precise"/>
+		</item>
+		<item name="Statut Operationnel">
+			<combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
+			<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+		</item>
+		<item name="Revetement de surface">
+			<combo key="surface" text="* Revetement de surface" values="paved,gravel,dirt/sand,unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
+			<combo key="surface_condition" text="Condition du revetement de surface" values="rough_less_than_40kph,smooth_greater_than_40kph,snow-ice,mud,unspecified" display_values="Mauvaise(moins de 40km/h),Bonne(plus de 40km/h),Neige/glace,Boue,Non precise"/>
+		</item>
+		<item name="Practicabilite">
+			<combo key="practicability" text="* Practicabilite" values="non_motorized,motorbike,4wd_less_than_3.5mt,light_truck_less_than_10mt,heavy_truck_less_than_20mt,truck_+_trailer_greater_than_20mt,unspecified" display_values="pieton,moto,4x4 de moins de 3.5t,camion de moins de 10t,camion de moins de 20t,camion de plus de 20t,non precise"/>
+		</item>
+		<item name="Longueur">
+     			<text key="length" text="* Longueur"/>
+		</item>
+		<item name="Largeur">
+      			<text key="width" text="* Largeur"/>
+		</item>
+		<item name="Charge totale maximale">
+      			<text key="maxweight" text="* Charge totale maximale"/>
+		</item>
+		<item name="Categorie de transport">
+			<combo key="transportation_use_category" text="* Categorie de transport" values="road,rail,oad_rail,canal,pipeline,cabling,unspecified" display_values="route,rail,route et rail,canal,pipeline,cablage,non precise"/>
+		</item>
+		<item name="Materiaux de base">
+			<combo key="base_mtrl" text="Materiaux de base" values="wood,concrete,stone,metal,pvc,unspecified" display_values="bois,beton,pierre,metal,pc,non precise"/>
+		</item>
+		<item name="Source">
+      			<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+      			<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+      			<text key="geometry_source_date" text="* Date de la source geometrique"/>
+      			<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+      			<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+     			<text key="attribute_source_date" text="* Date de la source attributaire"/>
+		</item>
+		<item name="Annotation">
+			<text key="note" text="Note"/>
+		</item>
+		<item name="Photo">
+			<text key="photo_num" text="Numero de la photo"/>
+      			<text key="photo_name" text="Nom de fichier de la photo"/>
+      			<text key="photo_url" text="URL de la photo uploadee sur FLICKR"/>
+		</item>
