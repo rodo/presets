@@ -2,8 +2,6 @@
 
 <label text="Ajout d'un bladder" />
 
-<key key="amenity" value="drinking_water" />			
-
 <key key="man_made" value="bladder" />
 
 <combo key="water_type" text="* Type d'eau" 
