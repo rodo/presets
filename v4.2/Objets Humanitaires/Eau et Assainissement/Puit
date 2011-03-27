@@ -3,12 +3,19 @@ icon=presets/water_well.png
 
 <label text="Ajout d'un puit" />
 
+
+<key key="man_made" value="water_well" />
+
 <combo key="amenity" text="* Eau potable" 
   values="drinking_water" 
   display_values="eau_potable"/>
 
-<combo key="man_made" text="* Puits" values="water_well" display_values="Puit"/>
-<combo key="water_type" text="Type d'eau" values="grey_water,drinking_water,industrial_water,unspecified" display_values="eau brute,eau potable,eau industrielle,non precise"/>
+
+<combo key="water_type" text="Type d'eau" 
+  values="grey_water,drinking_water,industrial_water,unspecified" 
+  display_values="eau brute,eau potable,eau industrielle,non precise"
+  en.display_values="grey_water,drinking_water,industrial_water,unspecified" />
+
 <combo key="water_quality_issue" text="probleme de qualite de l'eau" values="yes,no,unspecifed"  display_values="oui,non,non precise"/>
 
 <combo key="pump_type" text="Type de pompe" 
@@ -33,7 +40,7 @@ icon=presets/water_well.png
 
 <check key="program_aquatab" 
   text="* Integre au programme Aquatab : approvisionne en tablettes de purification d'eau"
-  default="off">
+  default="off" />
 
 
 <text key="geometry_source_name" text="* Nom de la source geometrique"/>

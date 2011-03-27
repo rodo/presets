@@ -1,4 +1,8 @@
 <label text="Uniquement dans le cas d'abris installes dans des batiments requisitionnes ponctuellement"/>
+
+<key key="hum_use" text="** Usage Humanitaire" value="disaster_shelter" />
+
+
 <label text="ID" />
 <text key="id:uid" text="UID"/>
 <text key="id:uuid" text="UUID"/>
@@ -30,7 +34,11 @@
 <text key="block" text="block"/>
 <label text="Operateur" />
 <text key="operator" text="* Operateur"/>
-<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+
+<combo key="operator_type" text="* Type d'operateur" 
+  values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" 
+  display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+
 <text key="operator id" text="Operator ID"/>
 <text key="contact_person" text="** Personne contact"/>
 <text key="phone" text="** Telephone"/>
@@ -38,7 +46,12 @@
 <text key="fax:" text="Fax"/>
 <label text="Usage et statut operationel" />
 <text key="use" text="** Utilisation premiere du batiment"/>
-<combo key="hum_use" text="** Usage Humanitaire" values="disaster_shelter" display_values="Abri temporaire"/>
+
+
+
+
+
+
 <combo key="op_status" text="** Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
 <label text="Batiments" />
 <text key="num_building" text="** Nombre de batiments"/>
