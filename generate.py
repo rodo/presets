@@ -44,7 +44,9 @@ def parseall(path, level=1):
                 out += "%s<!-- file : %s -->\n" % (indent, 
                                                       os.path.join(path, obj)
                                                       )
-                out += open(os.path.join(path, obj),'r').read()
+                for line in open(os.path.join(path, obj),'r'):
+                    if line.strip():
+                        out += indent + line
                 out += "%s<!-- end file : %s -->\n\n" % (indent, 
                                                     os.path.join(path, obj)
                                                     )
