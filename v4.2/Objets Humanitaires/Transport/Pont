@@ -1,0 +1,48 @@
+type=way,node
+
+<key key="bridge" value="yes">
+
+<combo key="bridge_type" text="* Type de pont" 
+  values="arch,beam,truss,floating,suspension,culvert,yes" 
+  display_values="voute,poutre,botte,flottant,suspension,caniveau,non specifie"/>
+
+<combo key="operational_status" text="* Statut Operationnel" 
+  values="open,restricted,closed,unspecified" 
+  display_values="ouvert,restreint,ferme,non precise"/>
+
+<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" 
+  values="reported,confirmed,unspecified" 
+  display_values="rapporte,confirmer,non precise"/>
+
+<combo key="barrier_bypass" text="* Voie de contournement" values="yes,no" display_values="oui,non"/>
+
+<text key="length" text="* Longueur"/>
+<text key="width" text="* Largeur"/>
+<text key="maxweight" text="* Charge totale maximale"/>
+
+<combo key="transportation_use_category" text="* Categorie de transport" values="road,rail,oad_rail,canal,pipeline,cabling,unspecified" display_values="route,rail,route et rail,canal,pipeline,cablage,non precise"/>
+
+<combo key="practicability" text="* Praticabilite" values="non_motorized,motorbike,4wd_less_than_3.5mt,light_truck_less_than_10mt,heavy_truck_less_than_20mt,truck_+_trailer_greater_than_20mt,unspecified" display_values="pieton,moto,4x4 de moins de 3.5t,camion de moins de 10t,camion de moins de 20t,camion de plus de 20t"/>
+<combo key="base material values" text="Materiaux de base" values="wood,concrete,stone,metal,pvc,unspecified" display_values="bois,beton,pierre,metal,pc,non precise"/>
+<combo key="surface" text="Revetement de surface" values="paved,gravel,dirt/sand,unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
+<combo key="surface_condition" text="Condition du revetement de surface" 
+  values="rough_less_than_40kph,smooth_greater_than_40kph,snow-ice,mud,unspecified" 
+  display_values="Mauvaise(moins de 40km/h),Bonne(plus de 40km/h),Neige/glace,Boue,Non precise"/>
+
+<space/>
+
+<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+
+<combo key="geometry_source_type" text="* Type de la source geometrique" 
+  values="gps,satellite_imagery,maps,gis_dataset,unspecified" 
+  display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"
+  en.display_values="gps,satellite_imagery,maps,gis_dataset,unspecified" />
+
+<text key="geometry_source_date" text="* Date de la source geometrique"/>
+
+<space/>
+
+<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+<text key="attribute_source_date" text="* Date de la source attributaire"/>
+<text key="note" text="Note"/>
