@@ -23,7 +23,8 @@ directory is a group and each file is an item. A special fill namesd
 'all' is added as is without add an item key.
 """
 
-import os
+import os,sys
+from time import time
 
 def parseall(path, level=1):
     '''Parse a directory and output his content'''
@@ -33,30 +34,71 @@ def parseall(path, level=1):
         indent += '  '
     for obj in os.listdir(path):
         if os.path.isdir(os.path.join(path, obj)):
+            print indent + obj
             out += indent + '<group name="' + obj + '">' + "\n"
             out += parseall( os.path.join(path, obj), level + 1)
             out += indent + "</group>\n"
         else:
             if not obj.endswith('~'):
-                out += "\n%s<!-- begin : %s -->\n" % (indent, 
+                out += "%s<!-- file : %s -->\n" % (indent, 
                                                       os.path.join(path, obj)
                                                       )
                 if obj == 'all':
                     out += open(os.path.join(path, obj),'r').read()
                 else:
-                    out += '<item name="'+obj+'">' + "\n"
-                    out += open(os.path.join(path, obj),'r').read()
-                    out += "</item>\n"
-                out += "\n%s<!-- end : %s -->\n" % (indent, 
+                    print indent + obj
+                    datas = ''
+                    icon = None
+                    typof = None
+                    for line in open(os.path.join(path, obj),'r'):
+                        if line.startswith('type='):
+                            typof = line.strip()[5:]
+                        elif line.startswith('icon='):
+                            icon = line.strip()[5:]
+                        else:
+                            datas += indent + '  ' + line
+                    out += openitem(obj, typof, icon, indent)
+                    out += datas
+                    out += indent + "</item>\n"
+                out += "%s<!-- end file : %s -->\n\n" % (indent, 
                                                     os.path.join(path, obj)
                                                     )
     return out
 
+def openitem(name, obj, icon, indent):
+    '''Open a new item'''
 
-def header():
+    out = indent + '<item name="'+ name +'"'
+
+    if obj != None:
+        out += ' type="' + obj + '"'
+
+    if icon != None:
+        out += ' icon="' + icon + '"'
+
+    out += '>' + "\n"
+
+
+    return out
+
+def lastver():
+    '''Search for the highest version number'''
+    cur = 0
+    for obj in os.listdir("./"):
+        if os.path.isdir(obj) and obj.startswith('v'):
+            cur = max(cur, float(obj[1:]))
+    return cur
+
+
+def header(version):
     '''Return the header section'''
-    out = '<?xml version="1.0"?>'
-    out += "\n<presets>\n"
+    fullver = str(version) + "_" + str(int(time()))
+    out = '<?xml version="1.0" encoding="UTF-8"?>'
+    out += "\n"+'<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"'
+    out += "\n"+ '  version="' + fullver + '"'
+    out += "\n"+ '  author="HOT (Humanitarian OpenStreetMap Team)"'
+    out += "\n"+ '  shortdescription="Humanitarian Data Model"'
+    out += "\n"+ '  description="Humanitarian Data Model">'+"\n\n"
     return out
 
 def footer():
@@ -64,13 +106,21 @@ def footer():
     out = "</presets>"
     return out
 
-def main(path):
+def main(prefix):
     '''Main function'''
-    out = header()
+    version = lastver()
+    if version == 0:
+        print "No version found please create a vNUM dir"
+        sys.exit(1)
+    path = "v%s" % str(version)
+    out = header(version)
     out += parseall(path)
     out += footer()
-    print out
+    filename = "%s-%s.xml" % (prefix, version)
+    with open(filename, 'w') as f_:
+        f_.write(out)
+    print "\n%s was generated" % filename
 
 if __name__ == "__main__":
     version = 4.2
-    main("v%s" % str(version))
+    main("hdm_josm_presets")
