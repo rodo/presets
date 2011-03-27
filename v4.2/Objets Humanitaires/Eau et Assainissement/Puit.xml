@@ -1,5 +1,4 @@
-type=node
-icon=presets/water_well.png
+<item name="Puit" type="node" icon="presets/water_well.png">
 
 <label text="Ajout d'un puit" />
 
@@ -57,3 +56,5 @@ icon=presets/water_well.png
 
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
+
+</item>

@@ -1,4 +1,9 @@
-<combo key="highway" text="Type" values="primary,secondary,tertiary,footway,track,unspecified" display_values="Primaire,Secondaire,Tertiaire,Chemin pieton,Piste,Non precise" delete_if_empty="true"/>
+<item name="Route" type="way">
+
+<combo key="highway" text="Type" 
+  values="primary,secondary,tertiary,footway,track,unspecified" 
+  display_values="Primaire,Secondaire,Tertiaire,Chemin pieton,Piste,Non precise" delete_if_empty="true"/>
+
 <combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
 <combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
 <combo key="Surface" text="* Type de revetement de surface" values="Paved,Gravel,Dirt/Sand,Unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
@@ -12,3 +17,4 @@
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="note"/>
 
+</item>

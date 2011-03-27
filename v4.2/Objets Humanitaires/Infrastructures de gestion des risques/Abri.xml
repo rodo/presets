@@ -1,3 +1,7 @@
+<item name="Abri">
+
+<key key="amenity" value="shelter" />
+
 <label text="ID" />
 <text key="id:uid" text="UID"/>
 <text key="id:uuid" text="UUID"/>
@@ -36,7 +40,7 @@
 <text key="email" text="Email"/>
 <text key="fax" text="Fax"/>
 <label text="Information Abri"/>
-<key key="amenity" value="shelter" />
+
 <combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise" readonly="true"/>
 <combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
 <combo key="building" text="* Batiment" values="yes,building_concrete,building_sheet_metal,building_wood,shelter,waterproof_shelter,non_waterproof_shelter,tent,no" display_values="batiment,batiment en dur,batiment en tole,batiment en bois,abri,abri etanche,abri non etanche,tente,non precise"/>
@@ -75,3 +79,4 @@
 <text key="photo_name" text="Nom de fichier de la photo"/>
 <text key="photo_url" text="URL de la photo uploadee sur FLICKR "/>
 
+</item>

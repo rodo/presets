@@ -1,0 +1,18 @@
+<item name="Risques">
+<label text="Ajout de Risques" />
+<combo key="natural" text="* Inondations" values="floods" display_values="Inondations"/>
+<combo key="natural" text="* Eau stagnante" values="staging_water" display_values="eau stagnante"/>
+<combo key="natural" text="* Eau" values="water" display_values="eau"/>
+<combo key="natural" text="* Glissements de terrain" values="landslide" display_values="glissements de terrain"/>
+<combo key="natural" text="* Boue" values="mud" display_values="boue"/>
+<combo key="risk_level" text="* Niveau de risque" values="high,medium,low,unspecified" display_values="fort,moyen,faible,non precise"/>
+<combo key="risk_impact_pop" text="* Impact sur population" values="vital,important,limited,unspecified" display_values="vital,important,limite,non precise"/>
+<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+<text key="geometry_source_date" text="* Date de la source geometrique"/>
+<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission_gps,field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+<text key="attribute_source_date" text="* Date de la source attributaire"/>
+<text key="note" text="Note"/>
+
+</item>

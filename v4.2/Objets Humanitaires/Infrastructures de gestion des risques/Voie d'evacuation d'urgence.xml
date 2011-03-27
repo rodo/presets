@@ -1,3 +1,5 @@
+<item name="Voie d'evacuation d'urgence" type="way">
+
 <label text="Ajout d'une Voie d'evacuation d'urgence" />
 <combo key="highway" text="* Voie d'evacuation d'urgence" values="emergency_evacuation_footway" display_value="Voie d'evacuation d'urgence"/>
 <combo key="Operational_status" text="* Statut operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise" readonly="true"/>
@@ -8,3 +10,5 @@
 <combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
+
+</item>

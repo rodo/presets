@@ -1,3 +1,5 @@
+<item name="Abri temporaire">
+
 <label text="Uniquement dans le cas d'abris installes dans des batiments requisitionnes ponctuellement"/>
 
 <key key="hum_use" text="** Usage Humanitaire" value="disaster_shelter" />
@@ -153,11 +155,13 @@
 <text key="geometry_source_date" text="* Date de la source geometrique"/>
 <text key="attribute_source_name" text="* Nom de la source attributaire"/>
 <combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
-     <text key="attribute_source_date" text="* Date de la source attributaire"/>
+
+<text key="attribute_source_date" text="* Date de la source attributaire"/>
 <label text="Note"/>
 <text key="note" text="Note"/>
 <label text="Photo"/>
 <text key="photo_num" text="Numero de la photo"/>
 <text key="photo_name" text="Nom de fichier de la photo"/>
- <text key="photo_url" text="URL de la photo uploadee sur FLICKR "/>
+<text key="photo_url" text="URL de la photo uploadee sur FLICKR "/>
 
+</item>

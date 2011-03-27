@@ -1,3 +1,4 @@
+<item name="Zone d'evacuation d'urgence">
 <label text="              Ajout d'une Zone d'evacuation d'urgence" />
 <combo key="landuse" text="* Zone d'evacuation d'urgence" values="emergency_evacuation_area" display_value="Zone d'evacuation d'urgence"/>
 <combo key="Operational_status" text="* Statut operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
@@ -8,3 +9,4 @@
 <combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
+</item>

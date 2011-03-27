@@ -1,14 +1,14 @@
-type=way,node
+<item name="Pont" type="way,node">
 
-<key key="bridge" value="yes">
+<key key="bridge" value="yes" />
 
 <combo key="bridge_type" text="* Type de pont" 
   values="arch,beam,truss,floating,suspension,culvert,yes" 
-  display_values="voute,poutre,botte,flottant,suspension,caniveau,non specifie"/>
+  display_values="voute,poutre,botte,flottant,suspension,caniveau,non specifie" />
 
 <combo key="operational_status" text="* Statut Operationnel" 
   values="open,restricted,closed,unspecified" 
-  display_values="ouvert,restreint,ferme,non precise"/>
+  display_values="ouvert,restreint,ferme,non precise" />
 
 <combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" 
   values="reported,confirmed,unspecified" 
@@ -46,3 +46,4 @@ type=way,node
 <combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
+</item>

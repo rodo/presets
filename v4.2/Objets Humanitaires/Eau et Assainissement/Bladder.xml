@@ -1,4 +1,4 @@
-type=node
+<item name="Bladder" type="node">
 
 <label text="Ajout d'un bladder" />
 
@@ -50,3 +50,4 @@ type=node
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
 
+</item>

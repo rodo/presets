@@ -39,47 +39,17 @@ def parseall(path, level=1):
             out += parseall( os.path.join(path, obj), level + 1)
             out += indent + "</group>\n"
         else:
-            if not obj.endswith('~'):
+            if obj.endswith('.xml'):
+                print indent + obj[:-4]
                 out += "%s<!-- file : %s -->\n" % (indent, 
                                                       os.path.join(path, obj)
                                                       )
-                if obj == 'all':
-                    out += open(os.path.join(path, obj),'r').read()
-                else:
-                    print indent + obj
-                    datas = ''
-                    icon = None
-                    typof = None
-                    for line in open(os.path.join(path, obj),'r'):
-                        if line.startswith('type='):
-                            typof = line.strip()[5:]
-                        elif line.startswith('icon='):
-                            icon = line.strip()[5:]
-                        else:
-                            datas += indent + '  ' + line
-                    out += openitem(obj, typof, icon, indent)
-                    out += datas
-                    out += indent + "</item>\n"
+                out += open(os.path.join(path, obj),'r').read()
                 out += "%s<!-- end file : %s -->\n\n" % (indent, 
                                                     os.path.join(path, obj)
                                                     )
     return out
 
-def openitem(name, obj, icon, indent):
-    '''Open a new item'''
-
-    out = indent + '<item name="'+ name +'"'
-
-    if obj != None:
-        out += ' type="' + obj + '"'
-
-    if icon != None:
-        out += ' icon="' + icon + '"'
-
-    out += '>' + "\n"
-
-
-    return out
 
 def lastver():
     '''Search for the highest version number'''

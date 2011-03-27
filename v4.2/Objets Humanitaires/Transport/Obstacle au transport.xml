@@ -1,3 +1,5 @@
+<item name="Obstacle au transport">
+
 <combo key="barrier:obstacle_type" text="* Type" 
   values="bridge_damage,road_damage,landslide,debris,checkpoint,roadblock,unspecified" 
   display_values="pont endommage,route endommagee,glissement de terrain,debris,checkpoint,route barree,non specifie" />
@@ -28,3 +30,4 @@
 
 <text key="note" text="Note"/>
 
+</item>

@@ -1,5 +1,4 @@
-type=way
-type=relation
+<item name="Drain" type="way,relation">
 
 <label text="Ajout d'un drain" />
 
@@ -27,5 +26,4 @@ allation gouvernementale publique,installation gouvernementale non publique,priv
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
 <text key="note" text="Note"/>
 
-
-
+</item>
