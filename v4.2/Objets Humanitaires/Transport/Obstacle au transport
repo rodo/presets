@@ -1,12 +1,30 @@
-<combo key="barrier:obstacle_type" text="* Type" values="bridge_damage,road_damage,landslide,debris,checkpoint,roadblock,unspecified" display_values="pont endommage,route endommagee,glissement de terrain,debris,checkpoint,route barree,non specifie"/>
-<combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
-<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+<combo key="barrier:obstacle_type" text="* Type" 
+  values="bridge_damage,road_damage,landslide,debris,checkpoint,roadblock,unspecified" 
+  display_values="pont endommage,route endommagee,glissement de terrain,debris,checkpoint,route barree,non specifie" />
+
+<combo key="operational_status" text="* Statut Operationnel" 
+  values="open,restricted,closed,unspecified" 
+  display_values="ouvert,restreint,ferme,non precise"/>
+
+<combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" 
+  values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+
 <combo key="Practicability" text="* Praticabilite" values="non_motorized,motorbike,4wd_less_than_3.5mt,light_truck_less_than_10mt,heavy_truck_less_than_20mt,truck_+_trailer_greater_than_20mt,unspecified" display_values="pieton,moto,4x4 de moins de 3.5t,camion de moins de 10t,camion de moins de 20t,camion de plus de 20t"/>
+
 <text key="geometry_source_name" text="* Nom de la source geometrique"/>
-<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+<combo key="geometry_source_type" text="* Type de la source geometrique" 
+  values="gps,satellite_imagery,maps,gis_dataset,unspecified" 
+  display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+
 <text key="geometry_source_date" text="* Date de la source geometrique"/>
+
 <text key="attribute_source_name" text="* Nom de la source attributaire"/>
-<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+
+<combo key="attribute_source_type" text="* Type de la source attributaire" 
+  values="field_mission,report,unspecified" 
+  display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+
 <text key="attribute_source_date" text="* Date de la source attributaire"/>
+
 <text key="note" text="Note"/>
 
