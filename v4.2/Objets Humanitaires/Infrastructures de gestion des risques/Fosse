@@ -1,0 +1,18 @@
+
+        		<label text="              Ajout d'un fosse" />
+        		<combo key="barrier" text="* Fosse" values="ditch" display_values="Fosse"/>
+        		<combo key="Operational_status" text="Statut operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise"/>
+			<text key="operator" text="* Operateur"/>
+			<combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+        		<text key="operator id" text="Identifiant d'operateur"/>
+			<text key="contact_person" text="Personne contact"/>
+			<text key="phone" text="* Telephone"/>
+        		<text key="email" text="Email"/>
+ 	     		<text key="geometry_source_name" text="* Nom de la source geometrique"/>
+   	   		<combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+   	   		<text key="geometry_source_date" text="* Date de la source geometrique"/>
+   	   		<text key="attribute_source_name" text="* Nom de la source attributaire"/>
+  	    		<combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+ 	    		<text key="attribute_source_date" text="* Date de la source attributaire"/>
+			<text key="note" text="Note"/>
+
