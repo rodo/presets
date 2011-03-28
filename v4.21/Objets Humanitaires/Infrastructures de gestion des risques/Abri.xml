@@ -1,0 +1,82 @@
+<item name="Abri">
+
+  <key key="amenity" value="shelter" />
+
+  <label text="ID" />
+  <text key="id:uid" text="UID"/>
+  <text key="id:uuid" text="UUID"/>
+  <text key="id:ssid" text="SSID"/>
+  <text key="id:db_shelter" text="ID Base Abri"/>
+  <label text="Signature spaticale"/>
+  <text key="name" text="* Nom"/>
+  <text key="name:en" text="Name:En"/>
+  <text key="name:fr" text="Name:Fr"/>
+  <text key="name:kr" text="Name:Kr"/>
+  <text key="registry_name" text="* Registry Name"/>
+  <text key="addr:country_national_code" text="Code de pays à deux lettres ISO 3166-1 alpha-2"/>
+  <text key="addr:country" text="Nom du pay"/>
+  <text key="addr:city" text="* Nom de la ville"/>
+  <text key="addr:ward" text="Ward"/>
+  <text key="addr:postal_code" text="Code postal (batiment, zone ou quarrtier)"/>
+  <text key="addr:street" text="* Nom de la rue"/>
+  <text key="addr:housenumber" text="* Numero du batiment "/>
+  <text key="addr:full" text="* Adresse complete "/>
+  <text key="pcode" text="* PCODE"/>
+  <text key="boundary_admin_level1_name" text="Nom de l'entite administrative de rang1"/>
+  <text key="boundary_admin_level2_name" text="Nom de l'entite administrative de rang2"/>
+  <text key="boundary_admin_level3_name" text="* Nom de l'entite administrative de rang3"/>
+  <text key="boundary_admin_level4_name" text="Nom de l'entite administrative de rang4"/>
+  <text key="place:area" text="* Place"/>
+  <text key="place:area_alternate" text="Place - Autre nom"/>
+  <text key="description" text="Place - Description"/>
+  <text key="place:nearestlandmark" text="Place - Point de Repere"/>
+  <text key="block" text="block"/>
+  <label text="Operateur" />
+  <text key="operator" text="* Operateur"/>
+  <combo key="operator_type" text="* Type d'operateur" values="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" display_values="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"/>
+  <text key="operator id" text="Operator ID"/>
+  <text key="contact_person" text="Personne contact"/>
+  <text key="phone" text="* Telephone"/>
+  <text key="email" text="Email"/>
+  <text key="fax" text="Fax"/>
+  <label text="Information Abri"/>
+
+  <combo key="operational_status" text="* Statut Operationnel" values="open,restricted,closed,unspecified" display_values="ouvert,restreint,ferme,non precise" readonly="true"/>
+  <combo key="operational_status_quality" text="Qualite de l'Information sur le statut operationnel" values="reported,confirmed,unspecified" display_values="rapporte,confirmer,non precise"/>
+  <combo key="building" text="* Batiment" values="yes,building_concrete,building_sheet_metal,building_wood,shelter,waterproof_shelter,non_waterproof_shelter,tent,no" display_values="batiment,batiment en dur,batiment en tole,batiment en bois,abri,abri etanche,abri non etanche,tente,non precise"/>
+  <text key="building_desc" text="Description du batiment"/>
+  <combo key="status" text="* Etat Batiment" values="good,medium,bad" display_values="beton arme,beton,toles"/>
+  <combo key="building_stucture" text="* Structure Batiment" values="reinforced_concrete,concrete,sheet_metal" display_values="bon,moyen,mauvais"/>
+  <combo key="damage_status" text="Dommages" values="destroyed,damaged,intact,unspecified"/>
+  <text key="damage_assessment_date" text="Date evaluation des dommages"/>
+  <text key="operator_damage" text="Organisation responsable de l'evaluation des dommages"/>
+  <text key="building_use" text="Utilisation du batiment"/>
+  <text key="capacity" text="* Capacite (description)"/>
+  <text key="capacity_ind" text="* Capacite d'accueil (individus)"/>
+  <text key="capacity_surface" text="* Capacite d'accueil (surface)"/>
+  <text key="capacity_ind_ground_0" text="* Capacite d'accueil - rez de chaussee (individus)"/>
+  <text key="capacity_surface_ground_0" text="* Capacite d'accueil - rez de chaussee (surface)"/>
+  <text key="capacity_ind_level_2" text="* Capacite d'accueil - 2eme niveau  (individus)"/>
+  <text key="capacity_surface_level_2" text="* Capacite d'accueil - 2eme niveau (surface)"/>
+  <text key="capacity_ind_level_3" text="* Capacite d'accueil - 3eme niveau (individus)"/>
+  <text key="capacity_surface_level_3" text="* Capacite d'accueil - 3eme niveau (surface)"/>
+  <combo key="has_courtyard" text="cour" values="yes" display_values="Cour"/>
+  <combo key="has_water" text="Eau" values="yes" display_values="Eau"/>
+  <combo key="has_toilets" text="cour" values="yes" display_values="Toilettes"/>
+  <combo key="has_kitchen" text="cour" values="yes" display_values="Cuisine"/>
+  <text key="access" text="* Accessibilite (description)"/>
+  <label text="Source"/>
+  <text key="geometry_source_name" text="* Nom de la source geometrique"/>
+  <combo key="geometry_source_type" text="* Type de la source geometrique" values="gps,satellite_imagery,maps,gis_dataset,unspecified" display_values="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"/>
+  <text key="geometry_source_date" text="* Date de la source geometrique"/>
+  <text key="attribute_source_name" text="* Nom de la source attributaire"/>
+  <combo key="attribute_source_type" text="* Type de la source attributaire" values="field_mission,report,unspecified" display_values="mission_terrain_gps,mission_terrain,rapport,non_precise"/>
+  <text key="attribute_source_date" text="* Date de la source attributaire"/>
+  <label text="Note"/>
+  <text key="note" text="Note"/>
+  <label text="Photo"/>
+  <text key="photo_num" text="Numero de la photo"/>
+  <text key="photo_name" text="Nom de fichier de la photo"/>
+  <text key="photo_url" text="URL de la photo uploadee sur FLICKR "/>
+
+</item>

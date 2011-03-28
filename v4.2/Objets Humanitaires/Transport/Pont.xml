@@ -23,7 +23,7 @@
 <combo key="transportation_use_category" text="* Categorie de transport" values="road,rail,oad_rail,canal,pipeline,cabling,unspecified" display_values="route,rail,route et rail,canal,pipeline,cablage,non precise"/>
 
 <combo key="practicability" text="* Praticabilite" values="non_motorized,motorbike,4wd_less_than_3.5mt,light_truck_less_than_10mt,heavy_truck_less_than_20mt,truck_+_trailer_greater_than_20mt,unspecified" display_values="pieton,moto,4x4 de moins de 3.5t,camion de moins de 10t,camion de moins de 20t,camion de plus de 20t"/>
-<combo key="base material values" text="Materiaux de base" values="wood,concrete,stone,metal,pvc,unspecified" display_values="bois,beton,pierre,metal,pc,non precise"/>
+<combo key="base_material_values" text="Materiaux de base" values="wood,concrete,stone,metal,pvc,unspecified" display_values="bois,beton,pierre,metal,pc,non precise"/>
 <combo key="surface" text="Revetement de surface" values="paved,gravel,dirt/sand,unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
 <combo key="surface_condition" text="Condition du revetement de surface" 
   values="rough_less_than_40kph,smooth_greater_than_40kph,snow-ice,mud,unspecified" 

@@ -100,16 +100,16 @@
 <text key="cap_ind_g3" text="** Capacite d'accueil - 3eme niveau (individus)"/>
 <text key="cap_sm_g3" text="** Capacite d'accueil - 3eme niveau (surface)"/>
 <label text="Equipements" />
- <combo key="court" text="** Cour" values="yes" display_values="oui"/>
+<combo key="court" text="** Cour" values="yes" display_values="oui"/>
 <text key="court_sm" text="** Superficie de la cour"/>
- <combo key="court_srf" text="** Revetement de la cour" values="paved,gravel,dirt/sand,unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
- <combo key="kitchen" text="Cuisine" values="yes,no" display_values="oui"/>
+<combo key="court_srf" text="** Revetement de la cour" values="paved,gravel,dirt/sand,unspecified" display_values="Pavee,Graviers,Terre/sable,Non precise"/>
+<combo key="kitchen" text="Cuisine" values="yes,no" display_values="oui"/>
 <text key="kitchen_sm" text="** Superficie de la cuisine"/>
- <combo key="kitchen_eq" text="** Cuisine equipee" values="yes,no" display_values="oui"/>
- <combo key="whs_unit" text="** Unite d'entreposage" values="yes,no" display_values="oui"/>
+<combo key="kitchen_eq" text="** Cuisine equipee" values="yes,no" display_values="oui"/>
+<combo key="whs_unit" text="** Unite d'entreposage" values="yes,no" display_values="oui"/>
 <text key="whs_unit_sm" text="** Superficie de l'unite d'entreposage"/>
- <combo key="power_source" text="** Source d'alimentation electrique" values="electricity_network,generator,no,unspecified" display_values="reseau electrique,generateur,aucune,non precise"/>
- <combo key="generator" text="** Presence de generateur" values="yes" display_values="oui"/>
+<combo key="power_source" text="** Source d'alimentation electrique" values="electricity_network,generator,no,unspecified" display_values="reseau electrique,generateur,aucune,non precise"/>
+<combo key="generator" text="** Presence de generateur" values="yes" display_values="oui"/>
 <text key="toilet_num" text="** Nombre de toilettes"/>
 <text key="toilet_gd" text="** Nombre de toilettes en bon etat"/>
 <text key="toilet_med" text="** Nombre de toilettes en etat moyen"/>

@@ -25,6 +25,7 @@ directory is a group and each file is an item. A special fill namesd
 
 import os,sys
 from time import time
+from presets import lastver
 
 def parseall(path, level=1):
     '''Parse a directory and output his content'''
@@ -42,24 +43,17 @@ def parseall(path, level=1):
             if obj.endswith('.xml'):
                 print indent + obj[:-4]
                 out += "%s<!-- file : %s -->\n" % (indent, 
-                                                      os.path.join(path, obj)
-                                                      )
+                                                   os.path.join(path, obj)
+                                                   )
                 for line in open(os.path.join(path, obj),'r'):
                     if line.strip():
                         out += indent + line
                 out += "%s<!-- end file : %s -->\n\n" % (indent, 
-                                                    os.path.join(path, obj)
-                                                    )
+                                                         os.path.join(path, obj)
+                                                         )
     return out
 
 
-def lastver():
-    '''Search for the highest version number'''
-    cur = 0
-    for obj in os.listdir("./"):
-        if os.path.isdir(obj) and obj.startswith('v'):
-            cur = max(cur, float(obj[1:]))
-    return cur
 
 
 def header(version):
@@ -71,6 +65,7 @@ def header(version):
     out += "\n"+ '  author="HOT (Humanitarian OpenStreetMap Team)"'
     out += "\n"+ '  shortdescription="Humanitarian Data Model"'
     out += "\n"+ '  description="Humanitarian Data Model">'+"\n\n"
+
     return out
 
 def footer():
