@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotdict>
+
+
+  <combo>
+
+    <text key="pump_type"
+	  en="manual,powered_network,powered_solar,powered_wind,powered_fuel,powered_hydraulic,unspecified"
+	  fr="manuelle,energie reseau,energie solaire,energie eolienne,energie fuel,energie hydraulique,non precise"/>
+
+
+    <text fr="Type d'operateur" 
+	  en="Operator type" />
+
+    <display_values fr="installation gouvernementale publique,installation gouvernementale non publique,privee a but lucratif,privee a but non lucratif"
+		    en="government_facility-public,government_facility-not_public,private_for_profit,private_non_profit" />
+
+
+    <display_values fr="mission_terrain_gps,mission_terrain,rapport,non_precise"
+		    en="field_mission,report,unspecified" />
+
+    <display_values fr="gps,image_satellite,carte,base_de_donnees_georeferencee,non_precise"
+		    en="gps,satellite_imagery,maps,gis_dataset,unspecified" />
+
+  </combo>
+</hotdict>
+
